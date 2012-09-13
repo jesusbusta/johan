@@ -1,8 +1,6 @@
 /* begin Page */
 
 /* Created by Artisteer v3.0.0.39952 */
-jQuery(function(){jQuery('#art-page-background-glare').css('zoom',1)});
-
 // css hacks
 (function($) {
     // fix ie blinking
@@ -73,14 +71,6 @@ jQuery(function() {
     });
 });/* end Page */
 
-/* begin Box, Sheet */
-
-function artFluidSheetComputedWidth(percent, minval, maxval) {
-    percent = parseInt(percent);
-    var val = document.body.clientWidth / 100 * percent;
-    return val < minval ? minval + 'px' : val > maxval ? maxval + 'px' : percent + '%';
-}/* end Box, Sheet */
-
 /* begin Flash */
 jQuery(function () {
     swfobject.switchOffAutoHideShow();
@@ -117,6 +107,14 @@ jQuery(function() {
 });
 
 /* end Menu */
+
+/* begin Box, Sheet */
+
+function artFluidSheetComputedWidth(percent, minval, maxval) {
+    percent = parseInt(percent);
+    var val = document.body.clientWidth / 100 * percent;
+    return val < minval ? minval + 'px' : val > maxval ? maxval + 'px' : percent + '%';
+}/* end Box, Sheet */
 
 /* begin Layout */
 jQuery(function () {
